@@ -1,7 +1,7 @@
 class Compute:
     def __init__(self, operator, operands):
         self.operator = operator
-        self.operator = operands
+        self.operators = operands
 
     def add(self):
         pass
@@ -13,4 +13,7 @@ class Compute:
         pass
 
     def multiply(self):
-        pass
+        sum  = 1
+        for item in self.operators:
+            sum *= item
+        print(sum)
